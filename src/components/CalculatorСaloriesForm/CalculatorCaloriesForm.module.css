@@ -23,24 +23,19 @@
 }
 
 .inputCalculate {
-  margin-left: 30px;
-  padding: 4px;
-  border: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  color: #9B9FAA;
+  margin-bottom: 60px;
+  font-family: 'Verdana';
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: #9b9faa;
-  width: 60px;
-}
-
-.labelCalculate::after {
-  content: '';
-  display: block;
-  width: 240px;
-  height: 1px;
-  background-color: #9b9faa;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
 }
 
 .labelRadio {
@@ -135,7 +130,7 @@
     margin-top: 18px;
     display: block;
     width: 240px;
-    height: 1px;
+    height: 2px;
     background-color:#9B9FAA;
   }
   

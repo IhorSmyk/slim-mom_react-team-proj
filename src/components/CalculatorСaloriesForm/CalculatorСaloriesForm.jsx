@@ -4,12 +4,12 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCalorie, fetchCalorieForUser } from 'redux/authModal/modalThunk';
 import { infoUser } from 'redux/info/info-operations';
-import css from './CalculatorСaloriesForm.module.css';
+import css from './CalculatorCaloriesForm.module.css';
 
-function CalculatorСaloriesForm() {
+function CalculatorCaloriesForm() {
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
- const userId = useSelector(state => state.auth?.user?.id);
- 
+  const userId = useSelector(state => state.auth?.user?.id);
+
   const [formData, setFormData] = useState({
     height: '',
     age: '',
@@ -24,20 +24,20 @@ function CalculatorСaloriesForm() {
   const TODAY = new Date().toLocaleDateString('en-CA');
 
   useEffect(() => {
-    dispatch(infoUser({ date: TODAY }))
+    dispatch(infoUser({ date: TODAY }));
   }, [dispatch, TODAY]);
-  
+
   const handleSubmit = event => {
     event.preventDefault();
     const formData = { weight, height, age, desiredWeight, bloodType };
-    if(isLoggedIn) {
-      dispatch(fetchCalorieForUser({userId, formData})).then(() =>
-              dispatch(infoUser({ date: TODAY })));
+    if (isLoggedIn) {
+      dispatch(fetchCalorieForUser({ userId, formData })).then(() =>
+        dispatch(infoUser({ date: TODAY }))
+      );
     } else {
-       dispatch(fetchCalorie(formData));
-    
+      dispatch(fetchCalorie(formData));
     }
-   setFormData({
+    setFormData({
       weight: '',
       height: '',
       age: '',
@@ -175,4 +175,4 @@ function CalculatorСaloriesForm() {
     </>
   );
 }
-export default CalculatorСaloriesForm;
+export default CalculatorCaloriesForm;
