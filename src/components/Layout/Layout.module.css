@@ -1,13 +1,3 @@
 .bgDesktopWithoutBg {
-    background-image: none;
+  background-image: none;
 }
-
-@media screen and (min-width: 1280px) {
-    .bgDesktop {
-        background-image: url(../../images/MainPageDesktop/bgDesktop.png);
-        background-repeat: no-repeat;
-        background-position: 300px 0;
-    }
-
-}
-

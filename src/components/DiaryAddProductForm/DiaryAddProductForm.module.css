@@ -3,7 +3,6 @@
   font-weight: 700;
   color: #9b9faa;
   margin-bottom: 60px;
-  /* display: none; */
 }
 
 .diaryForm label {
@@ -16,12 +15,14 @@
   border: none;
   border-bottom: 1px solid #e0e0e0;
 }
+
 .inputName {
   font-size: 18px;
   outline: none;
   width: 240px;
   margin-right: 50px;
 }
+
 .inputGram {
   font-size: 18px;
   outline: none;
@@ -44,9 +45,11 @@
   transform: rotate(90deg);
   background-color: #ea6e16;
 }
+
 .block {
   position: relative;
 }
+
 .searchedListWrapper {
   left: 250px;
   position: absolute;
@@ -62,6 +65,7 @@
   width: max-content;
   padding: 10px 20px;
 }
+
 .searchedProductsList li:hover {
   cursor: pointer;
   text-decoration: underline;

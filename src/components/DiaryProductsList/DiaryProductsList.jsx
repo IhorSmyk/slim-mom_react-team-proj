@@ -1,7 +1,6 @@
-import React from 'react';
+import { useSelector } from 'react-redux';
 import DiaryProductsListItem from 'components/DiaryProductsListItem/DiaryProductsListItem';
 import css from './DiaryProductsList.module.css';
-import { useSelector } from 'react-redux';
 
 function DiaryProductsList({ startDate }) {
   const eatenProducts = useSelector(state => state.infoUser?.eatenProducts);

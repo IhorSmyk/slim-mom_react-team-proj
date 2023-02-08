@@ -1,7 +1,6 @@
 import { Container } from 'components/Container/Container';
-import React from 'react';
-import css from './MainPage.module.css';
 import CalculatorСaloriesForm from '../../components/CalculatorСaloriesForm/CalculatorСaloriesForm';
+import css from './MainPage.module.css';
 
 function MainPage() {
   return (

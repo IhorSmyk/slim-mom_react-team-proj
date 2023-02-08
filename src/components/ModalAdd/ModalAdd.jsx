@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { infoUser } from 'redux/info/info-operations';
-
-import css from './ModalAdd.module.css';
 import API from 'services/API';
+import css from './ModalAdd.module.css';
 
 function ModalAdd({ setShowMobileModalAdd, startDate, handleClickClose }) {
   const [searchedProducts, setSearchedProducts] = useState([]);

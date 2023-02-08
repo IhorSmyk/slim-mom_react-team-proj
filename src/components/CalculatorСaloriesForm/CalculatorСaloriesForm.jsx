@@ -1,10 +1,9 @@
-import Modal from 'components/Modal/Modal';
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCalorie, fetchCalorieForUser } from 'redux/authModal/modalThunk';
 import { infoUser } from 'redux/info/info-operations';
-import css from './CalculatorCaloriesForm.module.css';
+import Modal from 'components/Modal/Modal';
+import css from './CalculatorСaloriesForm.module.css';
 
 function CalculatorCaloriesForm() {
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);

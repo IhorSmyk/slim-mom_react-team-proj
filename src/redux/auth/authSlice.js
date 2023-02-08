@@ -52,7 +52,6 @@ const userSlice = createSlice({
       .addCase(loginThunk.rejected, (state, { payload }) => {
         state.isLoading = false;
         state.error = payload;
-      
       })
       //   ///////////////////////logOut////////////////////////////////////////////////
       .addCase(logOutThunk.pending, state => {

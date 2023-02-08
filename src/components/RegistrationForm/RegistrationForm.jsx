@@ -1,8 +1,7 @@
-import { Container } from 'components/Container/Container';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-// import { useNavigate } from 'react-router';
 import { registerThunk } from 'redux/auth/authThunk';
+import { Container } from 'components/Container/Container';
 import css from './RegistrationForm.module.css';
 
 export const RegistrationForm = () => {
@@ -10,7 +9,6 @@ export const RegistrationForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
-  // const navigate = useNavigate();
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -40,7 +38,7 @@ export const RegistrationForm = () => {
       password,
     };
     dispatch(registerThunk(formData));
-    
+
     reset();
   };
 

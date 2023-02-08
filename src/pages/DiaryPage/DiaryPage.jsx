@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useMediaQuery } from 'react-responsive';
+import { infoUser } from 'redux/info/info-operations';
 import DiaryDateСalendar from 'components/DiaryDateСalendar/DiaryDateСalendar';
 import DiaryAddProductForm from 'components/DiaryAddProductForm/DiaryAddProductForm';
 import DiaryProductsList from 'components/DiaryProductsList/DiaryProductsList';
-import css from './DiaryPage.module.css';
-import { useDispatch } from 'react-redux';
-import { infoUser } from 'redux/info/info-operations';
-import { useMediaQuery } from 'react-responsive';
 import ModalAdd from 'components/ModalAdd/ModalAdd';
 import { Container } from 'components/Container/Container';
 import { RightSideBar } from 'components/RightSideBar/RightSideBar';
+import css from './DiaryPage.module.css';
 
 function DiaryPage() {
   const [startDate, setStartDate] = useState(new Date());
@@ -37,7 +37,7 @@ function DiaryPage() {
 
   return (
     <Container>
-      <div className={css.dairyPageWrapper}>
+      <div className={css.diaryPageWrapper}>
         <div className={css.flexContainer}>
           <div className={css.dateWrapper}>
             <span className={css.date}>{normalizedDate}</span>

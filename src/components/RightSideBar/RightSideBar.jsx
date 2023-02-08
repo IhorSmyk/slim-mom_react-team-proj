@@ -1,6 +1,4 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
-
 import css from './RightSideBar.module.css';
 
 export const RightSideBar = ({ startDate }) => {
@@ -26,22 +24,24 @@ export const RightSideBar = ({ startDate }) => {
   return (
     <div className={css.containerTitle}>
       <div className={css.summaryRightSideBar}>
-        <h3 className={css.headerRightSideBar}>Summary for {startDate || new Date().toLocaleDateString('en-CA')}</h3>
+        <h3 className={css.headerRightSideBar}>
+          Summary for {startDate || new Date().toLocaleDateString('en-CA')}
+        </h3>
         <ul className={css.listRightSideBar}>
           <li className={css.itemRihgtSideBar}>
-            Left{' '}
+            Left
             <span className={css.spanRightSideBar}>
               {Math.round(kcalLeft) || '0'} kcal
             </span>
           </li>
           <li className={css.itemRihgtSideBar}>
-            Consumed{' '}
+            Consumed
             <span className={css.spanRightSideBar}>
               {Math.round(kcalConsumed) || '0'} kcal
             </span>
           </li>
           <li className={css.itemRihgtSideBar}>
-            Daily rate{' '}
+            Daily rate
             <span className={css.spanRightSideBar}>
               {Math.round(dailyRate) || '0'} kcal
             </span>

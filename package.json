@@ -1,8 +1,8 @@
 {
-  "name": "react-homework-template",
+  "name": "slim-mom",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Serhii-Manko84.github.io/react-team-project/",
+  "homepage": "https://ihorsmyk.github.io/slim-mom/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.3",

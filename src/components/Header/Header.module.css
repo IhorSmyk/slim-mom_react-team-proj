@@ -4,7 +4,7 @@
   width: 320px;
   z-index: 3;
   background-color: #ffffff;
-  border-bottom: 2px solid #E0E0E0;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .verticalLine {
@@ -29,7 +29,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header{
+  .header {
     width: 768px;
   }
   .navigationBox {
@@ -40,7 +40,7 @@
   .mobileUserMenuDiv {
     display: none;
   }
-  
+
   .tabletUserMenuDiv {
     display: flex;
     margin-top: 5px;

@@ -25,7 +25,7 @@
 .inputCalculate {
   display: flex;
   flex-direction: column;
-  color: #9B9FAA;
+  color: #9b9faa;
   margin-bottom: 60px;
   font-family: 'Verdana';
   font-style: normal;
@@ -120,20 +120,20 @@
   .labelCalculate::after {
     margin-top: 14px;
   }
-  
+
   .radioTitle {
     margin-bottom: 8px;
   }
-  
+
   .radioTitle::after {
     content: '';
     margin-top: 18px;
     display: block;
     width: 240px;
     height: 2px;
-    background-color:#9B9FAA;
+    background-color: #9b9faa;
   }
-  
+
   .btnCalculate {
     display: inline-block;
   }

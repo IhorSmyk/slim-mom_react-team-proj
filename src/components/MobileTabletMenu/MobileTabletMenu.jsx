@@ -3,9 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-
 import { Container } from 'components/Container/Container';
-
 import css from './MobileTabletMenu.module.css';
 
 const modalRoot = document.querySelector('#modal-root');

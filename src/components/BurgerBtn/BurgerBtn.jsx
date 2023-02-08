@@ -1,6 +1,5 @@
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { GrClose } from 'react-icons/gr';
-
 import css from './BurgerBtn.module.css';
 
 export const BurgerBtn = ({ onClick, isMenuOpen }) => {

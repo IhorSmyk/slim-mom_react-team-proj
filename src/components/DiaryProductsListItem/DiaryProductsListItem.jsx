@@ -1,8 +1,7 @@
-import React from 'react';
-import css from './DiaryProductsListItem.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { infoUser } from 'redux/info/info-operations';
 import API from 'services/API';
+import css from './DiaryProductsListItem.module.css';
 
 function DiaryProductsListItem({
   product: { title, weight, kcal, id },

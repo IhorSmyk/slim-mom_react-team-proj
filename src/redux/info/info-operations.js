@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import API from 'services/API';
 import { token } from 'htpp/htpp';
+import API from 'services/API';
 
 axios.defaults.baseURL = 'https://slimmom-backend.goit.global';
 

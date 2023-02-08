@@ -7,7 +7,6 @@
 
 .sectionSummary {
   background: #f0f1f3;
-  /* padding-top: 40px; */
   padding-bottom: 24px;
 }
 .headerCalculate {
@@ -27,7 +26,6 @@
     margin: 0;
   }
   .sectionSummary {
-
     background-image: url(../../images/RightSideBar/bg-rightsidebar-tablet.png);
     background-repeat: no-repeat;
     background-position: 399px -4px;
@@ -49,7 +47,6 @@
   }
 
   .section {
-
     padding-bottom: 111px;
     width: 100%;
   }
@@ -59,9 +56,6 @@
     background-image: url(../../images/RightSideBar/bg-rightsidebar-desktop.png);
     background-repeat: no-repeat;
     background-position: 38px 0;
-    /* padding-top: 321px;
-    margin-top: -160px; */
     z-index: -1;
   }
 }
-

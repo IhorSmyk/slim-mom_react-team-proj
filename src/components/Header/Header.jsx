@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
-
 import { Container } from 'components/Container/Container';
 import { Logo } from 'components/Logo/Logo';
 import Navigation from 'components/Navigation/Navigation';

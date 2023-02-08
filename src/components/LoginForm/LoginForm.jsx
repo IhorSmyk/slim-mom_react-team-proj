@@ -1,7 +1,7 @@
-import { Container } from 'components/Container/Container';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { loginThunk } from 'redux/auth/authThunk';
+import { Container } from 'components/Container/Container';
 import css from './LoginForm.module.css';
 
 export const LoginForm = () => {
@@ -45,11 +45,11 @@ export const LoginForm = () => {
     <Container>
       <div className={css.BoxFormLogin}>
         <h2 className={css.TitleLogin}>Login</h2>
-        <form className={css.FormLogin} onSubmit={handleSubmit} >
+        <form className={css.FormLogin} onSubmit={handleSubmit}>
           <label className={css.LableLoginForm}>
             E-mail *
             <input
-            autoComplete='on'
+              autoComplete="on"
               className={css.InputLogin}
               name="email"
               type="email"
@@ -61,7 +61,7 @@ export const LoginForm = () => {
           <label className={css.LableLoginForm}>
             Password *
             <input
-              autoComplete='on'
+              autoComplete="on"
               className={css.InputLogin}
               name="password"
               type="password"

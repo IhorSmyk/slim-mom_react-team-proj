@@ -49,18 +49,7 @@ export const logOutThunk = createAsyncThunk(
     }
   }
 );
-// export const userRefreshThunk = createAsyncThunk(
-//   'user/curentUserThunk',
-//   async (_, thunkAPI) => {
-//     try {
-//       const response = await userRefresh();
 
-//       return response;
-//     } catch (e) {
-//       return thunkAPI.rejectWithValue(e.message);
-//     }
-//   }
-// );
 export const userRefreshThunk = createAsyncThunk(
   'user/curentUserThunk',
   async (oldSid, thunkAPI) => {
@@ -77,7 +66,7 @@ export const userRefreshThunk = createAsyncThunk(
       token.set(newAccessToken);
 
       const data = await userGetInfo();
-  
+
       return {
         user: data,
         sid,

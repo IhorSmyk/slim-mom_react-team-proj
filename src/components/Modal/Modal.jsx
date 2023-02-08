@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { useNavigate } from 'react-router-dom';
-import css from './Modal.module.css';
 import PropTypes from 'prop-types';
-import DailyCalorieIntake from 'components/DailyCalorieIntake/DailyCalorieIntake';
 import { GrClose } from 'react-icons/gr';
+import DailyCalorieIntake from 'components/DailyCalorieIntake/DailyCalorieIntake';
+import css from './Modal.module.css';
 
 const modalRoot = document.querySelector('#modal-root');
 
